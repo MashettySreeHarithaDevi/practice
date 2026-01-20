@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sree Haritha | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Sree Haritha Mashetty</h1>
+        <p>Engineering Student | Java | Html | CSS | Javascript</p>
+    </header>
+
+    <!-- About -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate engineering student interested in software development,
+            web technologies, and problem solving. I enjoy building real-world projects
+            and continuously learning new technologies.
+        </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+    <h2>Projects</h2>
+  
+    <div class="projects-grid">
+  
+      <div class="project-item">
+        <h3>To-Do App</h3>
+        <div class="container">
+          <h2>My Tasks</h2>
+          <div class="input-group">
+            <input type="text" id="taskInput" placeholder="What needs to be done?">
+            <button onclick="addTask()">Add</button>
+          </div>
+          <ul id="taskList"></ul>
+        </div>
+      </div>
+  
+      <div class="project-item">
+        <h3>Calculator</h3>
+        <div class="calculator">
+          <input type="text" id="display" disabled>
+          <div class="buttons">
+            <div class="button1">
+              <button onclick="clearDisplay()" class="col-2">C</button>
+              <button onclick="appendToDisplay('/')">/</button>
+              <button onclick="appendToDisplay('*')">×</button>
+  
+              <button onclick="appendToDisplay('7')">7</button>
+              <button onclick="appendToDisplay('8')">8</button>
+              <button onclick="appendToDisplay('9')">9</button>
+              <button onclick="appendToDisplay('-')">-</button>
+  
+              <button onclick="appendToDisplay('4')">4</button>
+              <button onclick="appendToDisplay('5')">5</button>
+              <button onclick="appendToDisplay('6')">6</button>
+              <button onclick="appendToDisplay('+')">+</button>
+  
+              <button onclick="appendToDisplay('1')">1</button>
+              <button onclick="appendToDisplay('2')">2</button>
+              <button onclick="appendToDisplay('3')">3</button>
+              <button onclick="calculate()">=</button>
+  
+              <button onclick="appendToDisplay('0')" class="col-2">0</button>
+              <button onclick="clearDisplay()">C</button>
+              <button onclick="backspace()">DEL</button>
+              <button onclick="appendToDisplay('.')">.</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="project-item">
+        <h3>Registration Form</h3>
+        <div class="form-container">
+          <form id="registrationForm">
+            <h2>Create Account</h2>
+            <div class="input-group">
+              <input class="in" type="text" id="username" placeholder="Username">
+              <small class="error-msg" id="userError"></small>
+            </div>
+            <div class="input-group">
+              <input class="in" type="email" id="email" placeholder="Email">
+              <small class="error-msg" id="emailError"></small>
+            </div>
+            <div class="input-group">
+              <input class="in" type="password" id="password" placeholder="Password">
+              <small class="error-msg" id="passError"></small>
+            </div>
+            <button class="button2" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+  
+      <div class="project-item">
+        <h3>Digital Clock</h3>
+        <div class="project4">
+          <div class="clock-container">
+            <div id="clock">00:00:00</div>
+            <div id="date">January 1, 2026</div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <script src="script.js"></script>
+  </section>
+
+</body>
+</html>
